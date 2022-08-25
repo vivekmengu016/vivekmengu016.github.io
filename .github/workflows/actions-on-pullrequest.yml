@@ -1,0 +1,24 @@
+name: actions-on-pullrequest
+on:
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  actions:
+    name: Acitions on Pull Request
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: use node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+      
+    - name: run test cases
+      run: |
+        npm install
+        npm run test
+
+    

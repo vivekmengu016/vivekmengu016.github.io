@@ -1,0 +1,42 @@
+body.dark {
+    background: #131417;
+    color: #f6f6f6;
+
+    .header {
+        background: #1d1e22;
+    }
+
+    .exp-section {
+        border-bottom-color: #2c2a2a;
+    }
+
+    button {
+        background: #444857;
+    }
+
+    .card-view,
+    .skill-card .card,
+    .education-cards .item {
+        background: #2c303a;
+        box-shadow: none;
+        border: none;
+    }
+
+    .skill-card .card p,
+    .education-cards .item p {
+        color: #7f8699;
+    }
+
+    ul.skills-list .item {
+        width: 50px;
+        height: 50px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        background: #4b4f5a;
+    }
+
+    .footer-social a {
+        color: #e5e5e5;
+    }
+}

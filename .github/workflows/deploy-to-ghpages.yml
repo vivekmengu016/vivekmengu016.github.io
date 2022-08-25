@@ -1,0 +1,34 @@
+name: deploy-to-ghpages
+on:
+  push:	
+    branches:	
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: use node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+
+    - name: npm install and build
+      run: |
+        npm install
+        npm run build
+
+    - name: run test cases
+      run: |
+        npm run test
+
+    - name: Deploy
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: gh-pages
+        FOLDER: dist
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
