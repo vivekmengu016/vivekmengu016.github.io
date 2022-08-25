@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import {
   HashRouter,
@@ -13,15 +13,24 @@ import "./index.scss";
 import "./darktheme.scss";
 
 
-const App = () => (
-  <div className="container">
-    <HashRouter basename="/">
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contact-me" element={<Contact />} />
-    </Routes>
-  </HashRouter>
-  </div>
-);
+const App = () => {
+
+  useEffect(() => {
+    let getStore = localStorage.getItem('_vmgio');
+    let theme = getStore ? JSON.parse(getStore) : { theme: 'light' }
+    document.body.classList.add(theme.theme);
+  });
+  
+  return (
+    <div className="container">
+      <HashRouter basename="/">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact-me" element={<Contact />} />
+      </Routes>
+    </HashRouter>
+    </div>
+  );
+} 
 
 ReactDOM.render(<App />, document.getElementById("app"));
