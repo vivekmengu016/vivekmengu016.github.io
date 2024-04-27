@@ -15,6 +15,7 @@ import AboutMe from "../components/aboutme";
 import Experience from "../components/expirence";
 import Education from "../components/education";
 import Languages from "../components/languages";
+import Blog from "../components/blog";
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
                 <AboutMe />
                 <Skills />
                 <Experience />
+                <Blog />
                 <Education />
                 <Languages />
                 <Footer />

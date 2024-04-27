@@ -12,7 +12,7 @@ const Footer = () => {
                     <a href="https://twitter.com/VivekMengu" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
                     <a href="https://codepen.io/vivekmengu" target="_blank"><ion-icon name="logo-codepen"></ion-icon></a>
                     <a href="https://www.linkedin.com/in/vivekmengu016/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <span>/vivekmengu016</span>
+                    <span>/ vivekmengu016</span>
                 </div>
             </div>
         </div>
