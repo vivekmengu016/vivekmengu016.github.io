@@ -1,6 +1,10 @@
 body.dark {
-    background: #131417;
-    color: #f6f6f6;
+    background: #000000;
+    color: #dedede;
+
+    .container-bg {
+        opacity: 0.1;
+    }
 
     .header {
         background: #1d1e22;
@@ -21,6 +25,10 @@ body.dark {
         fill: #1d1e22;
     }
 
+    .profile-details .info a {
+        color: #9b82ff;
+    }
+
     .card-view,
     .skill-card .card,
     .education-cards .item {
@@ -31,7 +39,7 @@ body.dark {
 
     .skill-card .card p,
     .education-cards .item p {
-        color: #7f8699;
+        color: #b0b0b0;
     }
 
     ul.skills-list .item {
@@ -40,7 +48,7 @@ body.dark {
         border-radius: 3px;
         display: flex;
         align-items: center;
-        background: #4b4f5a;
+        // background: #4b4f5a;
     }
 
     .footer-social a {

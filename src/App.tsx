@@ -12,6 +12,7 @@ import "./normalize.css";
 import "./index.scss";
 import "./darktheme.scss";
 
+import bg from "./static/bg.jpg";
 
 const App = () => {
 
@@ -24,11 +25,16 @@ const App = () => {
   return (
     <div className="container">
       <HashRouter basename="/">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact-me" element={<Contact />} />
-      </Routes>
-    </HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/contact-me" element={<Contact />} /> */}
+        </Routes>
+      </HashRouter>
+      <div className="container-bg" style={{
+      backgroundImage: `url(${bg})`,
+      width: '100%',
+      height: '100%',
+    }}></div>
     </div>
   );
 } 

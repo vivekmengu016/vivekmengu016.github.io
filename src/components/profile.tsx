@@ -123,7 +123,7 @@ const Profile = () => {
                 </div>
                 <div className="info">
                     <h2>Vivek Mengu</h2>
-                    <p>I'm Application Engineer at <a href="https://contentstack.com" target="_blank">Contentstack</a>, Mumbai - India</p>
+                    <p>Senior Software Engineer ll at <a href="https://contentstack.com" target="_blank">Contentstack</a>, Mumbai - India</p>
                 </div>
             </div>
             <div className="profile-actions">

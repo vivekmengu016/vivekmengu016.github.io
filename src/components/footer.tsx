@@ -1,10 +1,11 @@
 import React from "react";
 
 const Footer = () => {
+    const [year, setYear] = React.useState(new Date().getFullYear());
     return (
         <div className="exp-section">
             <div className="footer">
-                <p className="footer-creds"><span>&copy;</span> 2022 Built by Vivek Mengu</p>
+                <p className="footer-creds">{year} Built by Vivek Mengu</p>
                 <div className="footer-social">
                     <a href="https://www.npmjs.com/~vivekmengu" target="_blank" className="npm"><ion-icon name="logo-npm"></ion-icon></a>
                     <a href="https://www.facebook.com/vivek.mengu016/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
